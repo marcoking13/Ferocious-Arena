@@ -7,6 +7,6 @@
   },
   "homepage": "https://marcoking13.github.io/Raging-Rumble/",
   "scripts": {
-    "start":"nodemon app.js",
+    "start":"nodemon app.js"
   }
 }
