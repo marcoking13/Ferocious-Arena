@@ -144,55 +144,55 @@ var selected_box = `
 
     <div class="row">
     <div class="col-6"style="border-right:1px solid white;padding:5%">
-        <p class="selected_character_p player_color">Eban The Monster</p>
-        <img class="selected_character_img"  src = "./assets/imgs/mrhands_sprites/icon.png"= accesskey=""/>
+        <p class="selected_character_p player_color">???</p>
+        <img class="selected_character_img"  src = "./assets/imgs/question.png"= accesskey=""/>
         <div class="row"style="width:100%;margin-top:15%;">
             <div class="col-12">
               <p class="stat_p light-orange">Health</p>
               <div class="stat_bar_ light-orange-background"></div>
-              <span class="stat_num light-orange float-right">90</p>
+              <span class="stat_num light-orange float-right">??</p>
             </div>
             <div class="col-12">
               <p class="stat_p red">Attack</p>
               <div class="stat_bar_ red-background"></div>
-              <span class="stat_num red float-right">90</p>
+              <span class="stat_num red float-right">??</p>
             </div>
             <div class="col-12">
               <p class="stat_p light-green">Defense</p>
               <div class="stat_bar_ light-green-background"></div>
-              <span class="stat_num light-green float-right">90</p>
+              <span class="stat_num light-green float-right">??</p>
             </div>
             <div class="col-12">
               <p class="stat_p light-blue">Speed</p>
               <div class="stat_bar_ light-blue-background"></div>
-              <span class="stat_num light-blue float-right">90</p>
+              <span class="stat_num light-blue float-right">??</p>
             </div>
         </div>
 
     </div>
     <div class="col-6"style="padding:5%">
-        <p class="selected_character_p enemy_color">Eban The Monster</p>
-        <img class="selected_character_img"  src = "./assets/imgs/mrhands_sprites/icon.png"= accesskey=""/>
+        <p class="selected_character_p enemy_color">???</p>
+        <img class="selected_character_img"  src = "./assets/imgs/question.png"= accesskey=""/>
         <div class="row"style="width:100%;margin-top:15%;">
             <div class="col-12">
               <p class="stat_p light-orange">Health</p>
               <div class="stat_bar_ light-orange-background"></div>
-              <span class="stat_num light-orange float-right">90</p>
+              <span class="stat_num light-orange float-right">??</p>
             </div>
             <div class="col-12">
               <p class="stat_p red">Attack</p>
               <div class="stat_bar_ red-background"></div>
-              <span class="stat_num red float-right">90</p>
+              <span class="stat_num red float-right">??</p>
             </div>
             <div class="col-12">
               <p class="stat_p light-green">Defense</p>
               <div class="stat_bar_ light-green-background"></div>
-              <span class="stat_num light-green float-right">90</p>
+              <span class="stat_num light-green float-right">??</p>
             </div>
             <div class="col-12">
               <p class="stat_p light-blue">Speed</p>
               <div class="stat_bar_ light-blue-background"></div>
-              <span class="stat_num light-blue float-right">90</p>
+              <span class="stat_num light-blue float-right">??</p>
             </div>
         </div>
 

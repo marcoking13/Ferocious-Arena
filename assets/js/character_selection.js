@@ -410,6 +410,8 @@ const RenderCharacterSelect = (index,character,isPlayer) => {
   var defense_bar_width = Math.floor(character.stats.defense.stat / standard * 50);
   var speed_bar_width = Math.floor(character.stats.speed.stat / standard * 50);
 
+  
+
   return(
 
       `
