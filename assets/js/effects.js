@@ -39,10 +39,10 @@ const CreateSoundElement = (sound) => {
   source.setAttribute("src",sound);
 
   audio.append(source);
-  if(sound_effects_active){
-    audio.play();
-  }
+
   document.body.append(audio);
+  audio.play();
+
 
 }
 
