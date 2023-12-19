@@ -82,7 +82,7 @@ const RenderEndPage = async(character,player_won) =>{
 
   await delay(5000);
 
-  window.location.assign("./index.html");
+  window.location.assign("/");
 
   EmptyContainer(ending_container);
 
