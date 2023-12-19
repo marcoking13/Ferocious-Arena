@@ -7,7 +7,6 @@
   },
   "homepage": "https://marcoking13.github.io/Raging-Rumble/",
   "scripts": {
-    "predeploy": "npm run app.js",
-    "deploy": "gh-pages"
+    "start":"nodemon app.js",
   }
 }
