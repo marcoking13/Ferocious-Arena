@@ -1,0 +1,200 @@
+
+
+.test{
+  position: absolute;
+  width:10%;
+  top:25%;
+  left:10%;
+  z-index:99;
+}
+
+.title_2{
+  font-size: 0px;
+}
+.title_1{
+  font-size: 0px;
+}
+.bubble_ani{
+  transform: scale(1.2);
+  transition: all .5s;
+}
+@@keyframes scale_up {
+  0%{
+    width: 10%;
+  }
+  100%{
+    width: 11%;
+  }
+}
+.start_screen{
+  position: absolute;
+  width:50%;
+  left:-7.5%;
+  top:0%;
+  padding:5%;
+}
+.width-100{
+  width:100%;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: top;
+}
+.app_title{
+  animation: title .5s ease-in-out infinite ;
+  letter-spacing: 5px;
+  color:white;
+  z-index:1000;
+  width:100%;
+  text-align:center;
+  position: relative;
+  margin-top:2.5%;
+  font-family:"Special Elite";
+  opacity:0;
+  font-size:30px !important;
+}
+
+.title_ani_1{
+  -webkit-animation-name: title1;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+   color:#FF5757;
+   font-size:100px;
+   opacity:1;
+   left:0px
+}
+
+.title_ani_2{
+  -webkit-animation-name: title1;
+  color:#FF5757;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: .5s;
+  font-size:100px;
+  margin-left: 1%;
+  opacity:1;
+  bottom:0px;
+}
+
+.fireball_start{
+  position: absolute;
+  opacity:0;
+  left:-30%;
+  width:35%;
+  animation:fireball_start .75s ease-in 1;
+}
+
+
+.app_subtitle{
+  color:#FF5757;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto Condensed";
+  opacity:0;
+  margin-top:5%;
+  width:100%;
+}
+
+.subtitle_ani{
+  -webkit-animation-name: subtitle;
+  opacity:1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: .7s;
+}
+
+.start_game{
+  text-align:center;
+  font-family: monospace;
+  color:#FFDE59;
+  letter-spacing: 5px;
+  font-size:20px;
+  opacity:0;
+  margin-top:20%;
+}
+
+.start_game_ani{
+  -webkit-animation-name: start_text;
+  opacity:1;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1s;
+}
+.start_name{
+  transition: .5s all;
+  animation:in_out 1s ease-in infinite;
+}
+.start_name:hover + span{
+  width:100%;
+  width:20%;
+  transition: all .5s;
+}
+
+.title_container{
+  position:absolute;z-index:1000;top:0%;left:0;width:100%;
+}
+.title_description{
+  font-size:20px;color:orangered;font-weight:100;text-align:center;font-family:'Special Elite';margin-top:0%;letter-spacing:3px
+}
+.start_name{
+  font-size:20px;color:orangered;font-weight:100;text-align:center;font-family:'Special Elite';margin-top:7.5%;letter-spacing:3px;
+}
+.start_name:hover{
+  font-weight: bold;
+  transition: all .5s;
+  animation: none !important;
+}
+.title_name{
+  font-size:35px;color:orangered;font-weight:900;text-align:center;font-family:'Special Elite';margin-top:5%
+}
+@keyframes in_out {
+  0%{
+    opacity:0%;
+  }
+  50%{
+    opacity:100%;
+  }
+  100%{
+    opacity:0%;
+  }
+
+}
+
+.underline_start{
+width:0%;
+transition: .5s all;
+
+opacity:1 !important;
+margin-left:40%;
+height:1px;
+left:0%;
+position: absolute;
+top:100%;
+background:orangered;
+}
+
+.start_screen_background{
+  background-size:cover;
+  width:100%;
+  background:none !important;
+  height:100vh;
+  /* background: linear-gradient(
+  to right,
+  rgba(0, 0, 0, 1),
+  rgba(0, 0, 0, 1),
+  rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0)
+  ); */
+}

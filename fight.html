@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Raging Rumble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"  style="stylesheet"/>
+    <!-- CSS only -->
+    <link rel="icon" type="image/png" href="./assets/imgs/logo.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Merienda+One&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;1,100&family=Rubik+Moonrocks&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/general_animations.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/audio.css">
+    <link rel="stylesheet" href="./assets/css/move_animations.css">
+    <link rel="stylesheet" href="./assets/css/move_effects.css">
+    <link rel="stylesheet" href="./assets/css/fight.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Merienda+One&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;1,100&family=Rubik+Moonrocks&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Archivo+Black&family=Exo+2:wght@600&family=Exo:wght@800;900&family=Heebo:wght@800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,600&family=Noto+Sans:wght@300&family=Poppins:wght@600&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;1,100&family=Rubik+Distressed&family=Rubik+Moonrocks&family=Special+Elite&family=Teko:wght@300;500&family=Vast+Shadow&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+
+  </head>
+
+  <body class="fight_background">
+    <div class="video-container">
+      <video autoplay no controls muted playsinline loop id = "vid" autoplay="true" >
+        <source src="https://cdn.shopify.com/videos/c/o/v/f61d6c0bec3a481d8146f9806325d114.mp4" type="video/mp4" />
+      </video>
+  </div>
+    <div class="fight_page desktop">
+    <div class="header_container desktop"></div>
+    <div class="fight_container desktop padding-5">
+
+
+    </div>
+    <div class="description_container desktop"></div>
+
+    <div class="fight_showcase_modal desktop"></div>
+
+    <div class="boost_player boost_container desktop"></div>
+    <div class="boost_enemy boost_container desktop"></div>
+
+
+    <div class="fall_overlay">
+
+    </div>
+      <div class="fight_showcase_modal desktop"></div>
+    <div class=" audio_icon_character desktop">
+      <img class= " audio_icon  active"  src = "./assets/imgs/audio_icon.png"/>
+    </div>
+
+
+        <audio autoPlay class="game_music" >
+            <source src = "./assets/audio/classic.mp3" type="audio/mp3"></source>
+        </audio>
+
+
+    <audio class="ui_sound desktop">
+        <source src = "./assets/audio/select_wizard.wav" type="audio/wav"></source>
+    </audio>
+
+    <audio class="ui_sound death_sound desktop">
+        <source src = "./assets/audio/death.mp3" type="audio/mp3"></source>
+    </audio>
+
+    <audio class="ui_sound miss_sound desktop">
+        <source src = "./assets/audio/miss.mp3" type="audio/mp3"></source>
+    </audio>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src = "assets/data/class/stat.js"></script>
+  <script type="text/javascript" src = "assets/data/move/recharge.js"></script>
+  <script type="text/javascript" src = "assets/data/move/drain.js"></script>
+  <script type="text/javascript" src = "assets/data/move/boost.js"></script>
+  <script type="text/javascript" src = "assets/data/class/engine.js"></script>
+  <script type="text/javascript" src = "assets/data/class/animation_class.js"></script>
+  <script type="text/javascript" src = "assets/data/class/moves_class.js"></script>
+  <script type="text/javascript" src = "assets/data/class/character_class.js"></script>
+  <script type="text/javascript" src = "assets/data/config/move_config.js"></script>
+  <script type="text/javascript" src = "assets/data/config/character_config.js"></script>
+  <script type="text/javascript" src = "assets/js/audio.js"></script>
+  <script type="text/javascript" src ="assets/js/utility.js"></script>
+  <script type="text/javascript" src ="assets/js/fight_showcase_modal.js"></script>
+  <script type="text/javascript" src ="assets/js/ending.js"></script>
+  <script type="text/javascript" src ="assets/js/fight_renderer.js"></script>
+  <script type="text/javascript" src ="assets/js/init_fight.js"></script>
+  <script type="text/javascript" src ="assets/js/fight_engine.js"></script>
+  <script type="text/javascript" src ="assets/js/effects.js"></script>
+
+ </body>
+
+</html>

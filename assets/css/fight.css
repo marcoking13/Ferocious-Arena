@@ -1,0 +1,396 @@
+.quit_button{
+  background:black;
+  color:red;
+  margin-top:0%;
+  border-color:black;
+}
+
+.loser_effect{
+  background: red;
+  border-radius:20px;
+  width:40px;
+  height:20px;
+  animation:loser_effect 1s ease-in 1;
+  opacity:0;
+}
+.blood{
+  box-shadow:0px 0px 5px 15px sgreen;
+border-width:0px !important;
+transition: all .8s;
+}
+.move_box{
+  text-align: left;
+}
+html{
+  height:100vh;
+}
+
+.flame_hov{
+  opacity:0;
+  pointer-events: none;
+  position: relative;
+  bottom:1px;
+  width:15%;
+  float:left;
+}
+
+.move_box:hover .flame_hov{
+  opacity:1 !important;
+}
+
+.move_ef{
+  z-index:33;
+}
+
+.ending_image{
+  z-index:99 !important;
+}
+
+.fight_background{
+    background:url("./../imgs/main_game.png") !important;
+}
+
+.miss_icon{
+  width:50%;
+  position:relative;
+  opacity:0;
+  animation: miss 1s ease-in 1;
+}
+
+.miss_container{
+  position: absolute;
+  top:20%;
+}
+
+.enemy_miss{
+  left:30%;
+}
+
+.player_miss{
+  left:50%;
+}
+
+.winner_effect{
+  border-radius:50%;
+  width:25px;
+  height:25px;
+  position: absolute;
+  z-index:-2;
+  opacity:0;
+  background:green;
+  bottom:0%;
+  animation:winner_effect 1 .5s ease-in-out;
+}
+
+.winner_name{
+  z-index:9;
+  position:absolute;
+  z-index:99;
+  font-family:"Special Elite";
+  top:65%;
+  width:100%;
+  color:white;
+  text-align:center;
+}
+.win_text{
+  background-image: linear-gradient(to top,rgba(234, 97, 97, .9),rgba(56, 182, 255, .9),rgba(255, 222, 89, .9));
+  color:white !important;
+  padding:1%;
+  font-family:"Special Elite";
+  font-size:20px;
+  position: absolute;
+  right:0%;
+  display:inline;
+  z-index:99;
+}
+
+.lost_text{
+  background-image: linear-gradient(to top,rgba(255,0, 0, 1),rgba(255, 0,0, .9),rgba(255,0,0, .5));
+  color:white !important;
+  font-family:"Special Elite";
+  font-size:20px;
+  padding:1%;
+  position: absolute;
+  right:0%;
+  display:inline;
+  z-index:99;
+}
+@keyframes medal_ani{
+  0%{
+    transform: scale(0) rotateZ(0deg) ;
+  }
+  100%{
+    transform: scale(1) rotateX(1800deg) ;
+  }
+}
+.height-100vh{
+  height:100vh;
+}
+.ending_image{
+  animation: .5s image_trans 1 ease-in;
+  position:relative;
+  bottom:50px;
+  z-index:99
+}
+.medal_inner{
+  animation: medal_ani .7s 1 ease-in;
+  top:0%;position:absolute;left:0%;width:100%;z-index:99;
+}
+.medal{
+  animation: medal_ani .7s 1 ease-in;
+
+  top:15%;position:relative;left:0%;width:50%;margin-left:25%;z-index:999
+}
+
+.ending_win{
+  z-index:9;
+  text-align:right;
+  font-family:"Special Elite";
+  font-size:26px;
+  animation: .5s left_trans 1 ease-in;
+  position: relative;
+}
+html{
+  overflow-x: hidden;
+}
+
+.ending_container{
+  position:relative;
+  width:70%;
+  padding:5%;
+  animation:enlarge .5s 1 ease-in !important;
+  margin-left:15%;
+  z-index:99;
+  padding-bottom:15%;
+  background:black;
+  border-left:2px solid red;
+  border-right:2px solid red;
+}
+
+.ending_title{
+  z-index:9;
+  color:white;
+  font-size:25px;
+  font-family:"Special Elite";
+  animation: .5s left_trans 1 ease-in;
+  position: relative;
+}
+
+.quit_button{
+  border:1px solid white !important;
+}
+.quit_button:hover{
+  transition: all .5s;
+  background-image:linear-gradient(to right, rgba(255,0,0,1),rgba(255,0,0,.5));
+  color:white;
+  border-color:red !important;
+}
+.character_image{
+  width:50%;
+  margin-left:25%;
+}
+.character_fight_name{
+  text-align: center;
+  background:none !important;
+  font-size: 20px;
+  font-family: "Special Elite";
+  color:white;
+}
+
+.character_fight_name_right{
+  text-align: right;
+  background:black;
+  width:50%;
+  padding-right:5%;
+  padding-left:0% !important;
+  margin-left:25%;
+}
+.bar_right{
+  margin-left:20% !important;
+}
+.health_bar{
+  border:1px solid white;
+}
+.bar_left{
+  margin-left: -5%;
+  margin-top:-10%;
+}
+.enemy_blood{
+  transform:scaleX(1) !important;
+}
+
+
+.enlarge{
+  width:120% !important;
+  position: relative;
+  bottom:20px;
+  right:20px;
+}
+
+.character_img_container{
+  height:250px;
+}
+
+.move_box{
+
+  background: black;
+  text-align:center;
+  font-size:15px;
+  color:white;
+  border:1px solid white;
+  font-family: "Allerta Stencil"
+}
+
+.detail_text{
+  font-size: 15px;
+  float:left;
+  width:100%;
+  text-align: left;
+  font-family: "Allerta Stencil"
+}
+
+.description_text{
+  font-size:13px;
+    font-family: "Allerta Stencil"
+}
+
+.description_container{
+  background:black;
+  margin-top:5%;
+  color:white;
+  text-align: center;
+  padding:2.5%;
+  transition:  all .3s;
+  padding-top:1.5%;
+  padding-bottom:0;
+  left: 40%;
+    width: 20%;
+    position: absolute;
+    top: 0%;
+    border: 1px solid white;
+}
+
+.ending_page{
+  position: relative;
+  width:100%;
+}
+
+.move_box:hover{
+  color:red;
+  transition: border-color 1s 1 ease-in 0;
+  border-color:red;
+  position: relative;
+}
+.move_box{
+  border-width:2px;
+  margin-left:1%;
+  margin-top:10%;
+  border-radius:10px;
+}
+
+.move_box:hover > .boost_icon{
+  position: relative;
+  top:20px;
+}
+
+
+.health_bar{
+  width:80%;
+  background:black;
+  height:4vh;
+}
+
+.enemy_bar{
+  transform: scaleX(-1);
+}
+.fight_page{
+  z-index:-5;
+}
+.enemy_blood{
+  transform: scaleX(-1);
+}
+.blood{
+  background:#62B63F;
+  height:4vh;
+  padding:1%;
+
+  box-shadow: 0px 0px 4px 4px black;
+  font-size:15px;
+  font-weight: bold;
+  font-family: "Allerta Stencil"
+}
+
+.boost_container{
+  position: absolute;
+  top:75%;
+  height:100px;
+  width:20%;
+}
+
+.boost_icon{
+  width:20%;
+  float:left;
+}
+.glow_main{
+
+  width:.5%;
+  z-index:-1;
+  position: absolute;
+  opacity:0;
+  filter:invert(37%) sepia(46%) saturate(1472%) hue-rotate(324deg) brightness(123%) contrast(103%);
+  animation:glow 1 ease-in 5s;
+}
+@keyframes glow{
+  0%{
+    opacity:0%;
+    transform:scale(1)
+  }
+  50%{
+    transform: scale(3);
+    opacity:.5;
+  }
+  100%{
+    opacity:0%;
+    transform:scale(2);
+  }
+}
+.boost_enemy{
+  left:50%;
+}
+
+.boost_player{
+  left:5%;
+}
+
+.buff{
+  transform:rotateY(0deg) !important;
+  filter: invert(59%) sepia(89%) saturate(1395%) hue-rotate(174deg) brightness(99%) contrast(106%);
+}
+
+.debuff{
+  transform:rotateZ(180deg) !important;
+  filter: invert(47%) sepia(89%) saturate(1225%) hue-rotate(326deg) brightness(100%) contrast(98%);
+}
+
+.fall_overlay{
+  position: absolute;
+  z-index: -1;
+  background:none;
+  top:40%;
+  width:100%;
+  left:0;
+}
+
+.death {
+  opacity:0;
+  position: relative;
+  animation: death 1s 1 ease-in;
+}
+
+.recharging {
+  animation: recharge 1s ease-in infinite !important;
+}
+
+.ending_container_ani{
+  animation:enlarge .5s 1 ease-in !important;
+}

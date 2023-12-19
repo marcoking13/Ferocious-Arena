@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Raging Rumble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"  style="stylesheet"/>
+    <link rel="icon" type="image/png" href="./assets/imgs/logo.png">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Merienda+One&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;1,100&family=Rubik+Moonrocks&family=Vast+Shadow&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Merienda+One&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;1,100&family=Rubik+Moonrocks&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/general_animations.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/audio.css">
+
+    <link rel="stylesheet" href="./assets/css/character_selection.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Merienda+One&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;1,100&family=Rubik+Moonrocks&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="character_selection_background" style="padding-bottom:10%;background-size:cover;background-size:cover;background-image:linear-gradient(to right ,rgba(0, 186, 255, .7),rgba(0, 186, 255, .5),rgba(0, 186, 255, .2)),url('./assets/imgs/arena_background_new.png')">
+
+    <!-- <div class=" audio_icon_character desktop">
+    //  <img class= " audio_icon    inactive"  src = "./assets/imgs/audio_icon.png"/>
+    </div> -->
+
+    <div class="character_selection_container container-fluid desktop"style="padding:0%">
+      <div class="video-container">
+        <video autoplay no controls muted id = "vid" autoplay="autoplay" style="z-index:-1"  onclick="this.play()">
+          <source src="./assets/imgs/de.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+        <div class="header_container">
+
+
+        </div>
+        <div class="title_container"></div>
+        <div style="padding:5%;margin:0% auto;position:relative">
+
+        <div class=" row ">
+          <div class="col-3">
+            <div class="row characters_available_container_">
+            <div class="col-6 char_col char_col--1">
+              <img class="character_image_ middle-half" src = "./assets/imgs/eban_sprites/icon.png"/>
+              <p class="character_name"style="text-align:center">Eban the Ghost<p>
+            </div>
+            <div class="col-6 char_col char_col--2 char-col">
+              <img class="character_image_ middle-half" src = "./assets/imgs/frost_sprites/icon.png"/>
+              <p class="character_name text-center">Jack Frost<p>
+            </div>
+            <div class="col-6  char_col char_col--3">
+              <img class="character_image_ middle-half" src = "./assets/imgs/jackolatern_sprites/icon.png"/>
+              <p class="character_name text-center">Eban the Ghost<p>
+            </div>
+            <div class="col-6 char_col char_col--4">
+              <img class="character_image_ middle-half"src = "./assets/imgs/johnathan_sprites/icon.png"/>
+              <p class="character_name text-center">Eban the Ghost<p>
+            </div>
+            <div class="col-6 char_col char_col--5">
+              <img class="character_image_ middle-half"src = "./assets/imgs/mrhands_sprites/icon.png"/>
+              <p class="character_name text-center">Eban the Ghost<p>
+            </div>
+            <div class="col-6  char_col char_col--6">
+              <img class="character_image_ middle-half" src = "./assets/imgs/rikon_sprites/icon.png"/>
+              <p class="character_name text-center">Eban the Ghost<p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+          <div class="col-6">
+              <div class="row">
+                  <div class="col-6 ">
+                      <div class="">
+                          <p class="selected_character_p player_color">Eban The Monster</p>
+                          <img class="selected_character_img"  src = "./assets/imgs/mrhands_sprites/icon.png"= accesskey=""/>
+                      </div>
+                      <div class="row">
+                          <div class="col-6">
+                            <p class="stat_p">Health</p><span class="stat_num">90</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="stat_p red">Attack</p><span class="stat_num red">90</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="stat_p">Defense</p><span class="stat_num">90</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="stat_p">Speed</p><span class="stat_num">90</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6 selected_character_new">
+                    <div class="">
+                      <p class="selected_character_p enemy_color">Eban The Monster</p>
+                      <img class="selected_character_img"  src = "./assets/imgs/rikon_sprites/icon.png" = accesskey=""/>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+            <!-- <div class="col-2 char_col char_col--7"style="padding:0%;border:1px solid black">
+              <img class="character_image_" style="width:50%"src = "./assets/imgs/eban_sprites/Attack_1.png"/>
+              <p class="character_name text-center">Eban the Ghost<p>
+            </div>
+            <div class="col-3 char_col char_col--8"style="padding:0%;border:1px solid black">
+              <img class="character_image_" style="width:50%"src = "./assets/imgs/eban_sprites/Attack_1.png"/>
+              <p class="character_name"style="text-align:center">Eban the Ghost<p>
+            </div> -->
+       </div>
+     </div>
+
+        <div class="selected_character_container">
+            <div class="row">
+                <div class="col-6">
+                  <div class ="selected_character_col"></div>
+                </div>
+                <div class="col-6">
+                  <div class ="selected_character_col"></div>
+                </div>
+
+            <div>
+
+
+        </div>
+
+        <!-- <div class="start_button">
+
+          <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <button class="width-100 btn btn-danger fight_btn inactive no-point" data-target = "#fightmodal" data-toggle="modal" style="font-size:30px;background:black;border-color:black;font-family:Rubik Moonrocks;margin-bottom:5%;">Fight!</button>
+              </div>
+              <div class="col-3"></div>
+          </div>
+
+
+        <br />
+
+      </div> -->
+
+    </div>
+
+  <div class="fight_showcase_modal desktop relative"></div>
+
+    <audio  loop class="game_music">
+        <source src = "./assets/audio/game_music.mp3" type="audio/mp3"></source>
+    </audio>
+
+    <audio  class="ui_sound">
+        <source src = "./assets/audio/select_wizard.wav" type="audio/wav"></source>
+    </audio>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src = "assets/data/class/stat.js"></script>
+  <script type="text/javascript" src = "assets/data/move/recharge.js"></script>
+  <script type="text/javascript" src = "assets/data/move/drain.js"></script>
+  <script type="text/javascript" src = "assets/data/move/boost.js"></script>
+
+  <script type="text/javascript" src = "assets/data/class/animation_class.js"></script>
+  <script type="text/javascript" src = "assets/data/class/moves_class.js"></script>
+  <script type="text/javascript" src = "assets/data/class/character_class.js"></script>
+  <script type="text/javascript" src = "assets/data/config/move_config.js"></script>
+  <script type="text/javascript" src = "assets/data/config/character_config.js"></script>
+  <script type="text/javascript" src = "assets/js/audio.js"></script>
+  <script type="text/javascript" src ="assets/js/utility.js"></script>
+
+  <script type="text/javascript" src ="assets/js/character_selection.js"></script>
+    <script type="text/javascript" src ="assets/js/fight_showcase_modal.js"></script>
+
+ </body>
+
+</html>
