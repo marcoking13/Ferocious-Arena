@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path");
-var port = 4002;
+var port = process.env.PORT || 4002;
 
 
 var app = express();
