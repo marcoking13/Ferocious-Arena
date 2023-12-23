@@ -34,7 +34,7 @@ const Attack = async(move,is_enemy) => {
 
         await Death(is_enemy);
         await delay(1000);
-        
+
         var winner = DetermineWinner();
 
         EndGame(winner);
@@ -77,7 +77,6 @@ const CalculateDamage = (health,character,enemy,damage) =>{
 
 }
 
-
 const DetermineWinner = () =>{
 
   if(player_engine.health <= 0 || enemy_engine.health <= 0){
@@ -105,6 +104,7 @@ const DetermineWinner = () =>{
 }
 
 const EndGame = (winner) =>{
+
     if(winner){
 
      saved_characters = {
@@ -147,7 +147,6 @@ const Battle = async (id) =>{
 
     document.body.classList.remove("no-point");
     description_container.style.opacity = 1;
-
 
  }
 
@@ -279,6 +278,7 @@ const SideEffects = (side_effects,is_enemy,damage) => {
 
           if(enemy_engine.stages < 4){
             var boost_data =  boost(side_effects,saved_characters.enemy,true);
+
             saved_characters.enemy.stats = boost_data;
             enemy_engine.stages += 1;
 
@@ -290,6 +290,7 @@ const SideEffects = (side_effects,is_enemy,damage) => {
           if(player_engine.stages < 4){
 
             var boost_data =  boost(side_effects,saved_characters.player,false);
+
             saved_characters.player.stats = boost_data;
             player_engine.stages += 1;
 

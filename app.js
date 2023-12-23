@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path");
-var port = process.env.PORT || 4002;
+var port = 4002;
 
 
 var app = express();
@@ -17,5 +17,5 @@ app.get("/fight",(req,res)=>{
 
 
 app.listen(port,()=>{
-  console.log("listening");
+  console.log("Listening on Port:"+port);
 })

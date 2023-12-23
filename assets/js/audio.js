@@ -2,8 +2,10 @@ var hasPlayed = false;
 
 var music_active = false;
 
-
 var sound_effects_active = false;
+
+var audio_button = document.querySelector(".audio_icon");
+
 
 const CreateAudioSound = (sound,type) => {
 
@@ -22,18 +24,13 @@ const CreateAudioSound = (sound,type) => {
 const StopOrPlayAudio = (audio,play) =>{
 
   if(play){
-
     audio.play();
-
-  }else{
-
+  }
+  else{
     audio.pause();
-
   }
 
 }
-
-var audio_button = document.querySelector(".audio_icon");
 
 audio_button.addEventListener("click",(e)=>{
 
@@ -43,6 +40,7 @@ audio_button.addEventListener("click",(e)=>{
 
     e.target.classList.remove("inactive");
     e.target.classList.add("active");
+
     music_active = true;
     sound_effects_active = true;
 
@@ -50,6 +48,7 @@ audio_button.addEventListener("click",(e)=>{
 
     e.target.classList.remove("active");
     e.target.classList.add("inactive");
+
     music_active = false;
     sound_effects_active = false;
 

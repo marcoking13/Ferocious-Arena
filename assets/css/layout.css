@@ -5,23 +5,196 @@
 .width-50{
   width:50%;
 }
+
+.padding-5{
+  padding:5%;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.displayed-cleared{
+  clear:both;
+}
+
+.text-left{
+  text-align:left;
+}
+
+.border-white-right{
+  border-right:1px solid white;
+}
+
+.white{
+  color:white;
+}
+
+.font-30{
+  font-size:30px;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.special-elite{
+  font-family:'Special Elite'
+}
+
 .relative{
   position: relative;
 }
+
+.margin-top-15{
+  margin-top:15%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.height-200px{
+  height:200px;
+}
+
+.player_effects{
+  position: relative !important;
+}
+
+.enemy_effects{
+  position: relative !important;
+}
+
+.enemy_name{
+  color:#FF5757 !important;
+}
+
+.player_name{
+  color:#38B6FF !important;
+}
+
+.red{
+  color:red;
+}
+
+
+.float-right{
+  float:right;
+}
+
+.light-green{
+  color:#00BF63
+}
+
+.light-green-background{
+  background:#00BF63
+}
+
+.red-background{
+  background:red;
+}
+
+.light-orange{
+  color:#FFBD59;
+}
+
+.light-orange-background{
+  background:#FFBD59
+}
+
+.light-blue{
+  color:#38B6FF
+}
+
+.light-blue-background{
+  background:#38B6FF;
+}
+
+.padding-top-30{
+  padding-top: 30%;
+}
+
+.width-100{
+  width:100%;
+}
+
+.margin-top-15{
+  margin-top:15%;
+}
+
+.divider-right{
+  border-right:1px solid right;
+}
+
+.padding-5{
+  padding:5%;
+}
+
+.enemy_color{
+  color:#FF5757;
+}
+
+.player_color{
+  color:#38B6FF;
+}
+
+.width-50{
+  width:50%;
+}
+
+.middle-half{
+  width:50% !important;
+  margin-left:25% !important;
+}
+
+.width-40{
+  width:40%;
+}
+
+.margin-left-25{
+  margin-left:25%;
+}
+
+
+.float-left{
+  float: left;
+}
+
+.max-z{
+  z-index: 9999;
+}
+
+.xs{
+  z-index:99;
+  font-size:20px
+}
+
+
+.height-100vh{
+  height:100vh;
+}
+
+
 .padding-right-20{
   padding-right:20%;
 }
+
 .light_red{
   color:#FF5757
+}
+
+.width-100{
+  width:100%;
 }
 
 .light_blue{
   color:#38B6FF;
 }
+
 .margin-top-5{
   margin-top:5%;
 }
-
 
 .rubik{
   font-family: "Rubik Moonrocks"
@@ -50,9 +223,11 @@
 .inactive{
   opacity:.5;
 }
+
 .width-100{
   width:100%;
 }
+
 .ease_left{
   animation: ease_left .5s 1 ease-in;
 }
@@ -97,9 +272,11 @@
 .ice_background p{
   background:rgb(200,233,233) !important;
 }
+
 .rotate-180{
   transform:rotateY(180deg);
 }
+
 .ice_text p{
   color:rgb(200,233,233) !important;
 }
@@ -119,9 +296,11 @@
 .width-100{
   width:100%;
 }
+
 .active{
   opacity:1;
 }
+
 .margin-left-10{
   margin-left: 10%;
 }
@@ -149,49 +328,63 @@
 .square-list-style{
   list-style-type:square;
 }
+
 .width-80{
   width:80%;
 }
+
 .extra-light-font{
   font-weight:200;
 }
+
 .light-font{
   font-weight:300;
 }
+
 .regular-font{
   font-weight:400;
 }
+
 .padding-bottom-20{
   padding-bottom:20%;
 }
+
 .padding-bottom-40{
   padding-bottom:40%;
 }
+
 .padding-top-20{
   padding-top:20%;
 }
-.
+
 .margin-top-20{
   margin-top:20%;
 }
+
 .margin-left-10{
   margin-left:10%;
 }
+
 .line-height-2{
   line-height: 2;
 }
+
 .bigger-heading{
   font-size:70px;
 }
+
 .z-index-50{
   z-index:50;
 }
+
 .z-index-0{
   z-index:0;
 }
+
 .small-heading{
   font-size:20px;
 }
+
 .width-75{
   width:75%;
 }
@@ -280,7 +473,7 @@ body{
 }
 
 .padding-bottom-0{
-    padding-bottom:0%;
+  padding-bottom:0%;
 }
 
 .border-bottom-white-1px{
@@ -319,9 +512,11 @@ body{
   padding:0;
   margin:0;
 }
+
 .white{
   color:white;
 }
+
 .z-99{
   z-index:99;
 }
@@ -660,8 +855,6 @@ body{
 .paragraph{
   font-size:14px;
 }
-
-
 
 
 @media only screen and (max-width:680px){

@@ -1,7 +1,7 @@
 
 var countdown = 5;
 var effect_modal_interval = null;
-
+var _in ;
 
 const ResetCountdown = () =>{
   countdown = 5;
@@ -17,7 +17,7 @@ const RefreshModal = (player,enemy)=>{
 
 }
 
-var _in ;
+
 const Countdown = async(player,enemy) =>{
 
   var countdown = 5;
@@ -76,6 +76,7 @@ const RenderVSModal = (player,enemy) => {
   </div>`
 
   return html;
+  
 }
 
 const GenerateModal = (player,enemy) =>{

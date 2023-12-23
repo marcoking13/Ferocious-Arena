@@ -1,6 +1,5 @@
 var ending_effect_interval = null;
 
-
 var left = 0;
 
 const RenderEndPage = async(character,player_won) =>{
@@ -14,40 +13,40 @@ const RenderEndPage = async(character,player_won) =>{
   var background = player_won ? "./assets/imgs/win.gif" : "./assets/imgs/lose.gif"
 
   var html = `
-  <div class="container-fluid ending_container_new  ending_container_ relative">
-    <p class="${win_color}">You ${win_text}</p>
 
-    <div class="row">
+    <div class="container-fluid ending_container_new  ending_container_ relative">
 
-      <div class="col-6">
-
-        <p class="ending_title">
-          Returning to Character Selection....
-        </p>
-
-      </div>
-
-      <div class="col-5">
-      </div>
-
-    </div>
+      <p class="${win_color}">You ${win_text}</p>
 
       <div class="row">
 
-        <div class="col-4"></div>
+        <div class="col-6">
 
-        <div class="col-4 relative height-100vh">
-
-          <img class="width-100 medal medal_ani" src="${character.display_image}"/>
-          <img class="width-100 medal_inner medal_ani" src="./assets/imgs/medal.png"/>
-          <h1 class="text-center winner_name">${character.name}</h1>
-
+          <p class="ending_title">
+            Returning to Character Selection....
+          </p>
 
         </div>
-        <div class="col-4"></div>
+
+        <div class="col-5"></div>
 
       </div>
 
+        <div class="row">
+
+          <div class="col-4"></div>
+
+          <div class="col-4 relative height-100vh">
+
+            <img class="width-100 medal medal_ani" src="${character.display_image}"/>
+            <img class="width-100 medal_inner medal_ani" src="./assets/imgs/medal.png"/>
+            <h1 class="text-center winner_name">${character.name}</h1>
+
+          </div>
+
+          <div class="col-4"></div>
+
+        </div>
 
   </div>`
 
@@ -82,7 +81,7 @@ const RenderEndPage = async(character,player_won) =>{
 
   await delay(5000);
 
-  window.location.assign("/");
+  window.location.assign("./index.html");
 
   EmptyContainer(ending_container);
 

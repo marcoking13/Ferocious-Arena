@@ -10,28 +10,37 @@ const UpdateDescription = (move) => {
 
 }
 
-
 const RenderDescriptionRow  = (character) =>{
 
   const html = `
+
   <div class="row">
 
-    <div class="col-12 padding-bottom-5">
-      <div class="row move_row">
-        ${MoveLoop(character.moves,"player_character",false)}
+      <div class="col-12 padding-bottom-5">
+
+        <div class="row move_row">
+          ${MoveLoop(character.moves,"player_character",false)}
+        </div>
+
       </div>
+
+      <div class="col-12 margin-top-5">
+
+        <span>
+          <p class="detail_text attack_text float-left"></p>
+          <p class="detail_text accuracy_text float-left"></p></span>
+          <p class="description_text display-cleared text-left">
+            Hover over a move to learn more details
+          </p>
+        </span>
+
+      <br />
+
     </div>
 
-    <div class="col-12 margin-top-5">
-      <span><p class="detail_text attack_text float-left"></p>   <p class="detail_text accuracy_text float-left"></p></span>
+ </div>
 
-      <p class="description_text"style="clear:left;text-align:left;">Hover over a move to learn more details</p>
-
-    </div>
-
-    <br />
-
-  </div>`;
+  `;
 
   description_container.innerHTML = html;
 
@@ -40,6 +49,7 @@ const RenderDescriptionRow  = (character) =>{
 const RenderFightRow = (player,enemy) =>{
 
     const html = `
+
     <div class="row fight_row">
 
       <div class="col-4">
@@ -56,6 +66,7 @@ const RenderFightRow = (player,enemy) =>{
     `;
 
     const container = document.querySelector(".fight_container");
+
     container.innerHTML = html;
 
 }
@@ -143,50 +154,26 @@ const RenderBoost =(container, is_enemy, lower, stages)=>{
 const Recharging = (charging_turns,element) =>{
 
   if(charging_turns > 0){
-
     element.classList.add("recharging");
-
   }else{
-
     element.classList.remove("recharging");
-
   }
 
 }
 
 const GenerateBackgroundEffect =()=>{
-//    var container = document.body;
-    //for (let i =0; i <= 2; i++){
-
-      // var randomX = Math.random() * 100;
-      // var randomY = Math.random() * 100;
-      //
-      // var effect = document.createElement("img");
-      //
-      //
-      //   effect.setAttribute("src","./assets/imgs/glow.png");
-      //
-      //
-      // effect.classList.add("glow_main");
-      //
-      //
-      //   effect.style.left = randomX.toString() +"%";
-      //
-      //     effect.style.top = randomY.toString() +"%";
-      //
-      //   container.append(effect);
-//}
+  console.log("Unavailable");
 }
-
 
 const RenderHeader = () =>{
 
     const html = `
-    <div class="row menu_header margin-top-2_5">
+      <div class="row menu_header margin-top-2_5">
 
         <div class="col-2 margin-left-2_5">
-          <button class="btn btn-secondary quit_button">Quit Game</button>
+          <a href = "/"> <button class="btn btn-secondary quit_button">Quit Game</button> </a>
         </div>
+
     </div>`;
 
     const container = document.querySelector(".header_container");
@@ -199,36 +186,34 @@ const RenderHeader = () =>{
 
 }
 
-
-
-
 const DeathAnimation = async(characterElement) => {
-  characterElement.classList.add("death");
-  StopOrPlayAudio(document.querySelector(".death_sound"),true);
-  await delay(1000);
-}
 
+  characterElement.classList.add("death");
+
+  StopOrPlayAudio(document.querySelector(".death_sound"),true);
+
+  await delay(1000);
+
+}
 
 const ReturnCharacterCol = (character,is_enemy) =>{
 
-  var enemy_addon = is_enemy ? true : false;
+  var rotation = 0;
 
+  var enemy_addon = is_enemy ? true : false;
   var character_class = is_enemy ? "enemy_character" : "player_character";
   var character_blood = is_enemy ? "enemy_blood" : "player_blood";
   var character_health = is_enemy ? enemy_engine.health : player_engine.health;
-  var rotation = 0;
   var right = is_enemy ? "character_fight_name_right" : "";
   var bar_right = is_enemy ? "bar_right" : "";
   var rotate_other_side = is_enemy ? 180 : 0;
-
   var is_rotated = character.flip_sprite ? 180 : 0;
+  var enlarge = character.name == "Ebin the Terrible"? "enlarge" : "";
+  var starting_width = character_health / character.stats.health.stat;
+  var bar_margin = is_enemy ? "right:5%" : "left:5%";
 
   rotation = is_rotated + rotate_other_side;
-
-  var enlarge = character.name == "Ebin the Terrible"? "enlarge" : "";
-  var starting_width = character_health / character.stats.health.stat
   starting_width = starting_width * 100;
-  var bar_margin = is_enemy ? "right:5%" : "left:5%";
 
   const html = `
   <div class="character_fight_column width-100">
@@ -236,18 +221,17 @@ const ReturnCharacterCol = (character,is_enemy) =>{
     <div class="row">
 
       <div class="col-12 character_img_container">
+
         <p class="character_fight_name ${right}">${character.name}</p>
         <img style = "transform:rotateY(${rotation.toString()}deg)" src = "${character.display_image}" class="width-100 character_image ${character_class} ${enlarge}"/>
-        <div class="health_bar width-100 "style="${bar_margin};top:55%;position:absolute;width:30%;margin-top:5%">
-          <div class="blood ${character_blood}" style="position:absolute;top:-1%;width:${starting_width}%;text-align:center">${character_health.toString()}</div>
+
+        <div class="health_bar  "style="${bar_margin};">
+          <div class="blood ${character_blood} text-center absolute" style="position:absolute;top:-1%;width:${starting_width}%;text-align:center">${character_health.toString()}</div>
         </div>
+
       </div>
 
-
-
     </div>
-
-
 
   </div>`;
 

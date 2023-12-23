@@ -11,6 +11,9 @@ var disable = false;
 
 music_active = true;
 
+const description_container = document.querySelector(".description_container");
+
+
 const MoveLoop = (moves,class_name,is_enemy) =>{
 
   var html = ``;
@@ -44,7 +47,6 @@ const GetCharactersFromLocalStorage = () =>{
   saved_characters.enemy = JSON.parse(enemy);
 
 }
-const description_container = document.querySelector(".description_container");
 
 const AddEventToMoves = () =>{
 

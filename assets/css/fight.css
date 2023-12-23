@@ -1,9 +1,16 @@
+
+html{
+  height:100vh;
+  overflow-x: hidden;
+}
+
 .quit_button{
   background:black;
   color:red;
   margin-top:0%;
   border-color:black;
 }
+
 
 .loser_effect{
   background: red;
@@ -13,16 +20,15 @@
   animation:loser_effect 1s ease-in 1;
   opacity:0;
 }
+
 .blood{
   box-shadow:0px 0px 5px 15px sgreen;
-border-width:0px !important;
-transition: all .8s;
+  border-width:0px !important;
+  transition: all .8s;
 }
+
 .move_box{
   text-align: left;
-}
-html{
-  height:100vh;
 }
 
 .flame_hov{
@@ -47,7 +53,7 @@ html{
 }
 
 .fight_background{
-    background:url("./../imgs/main_game.png") !important;
+  background:url("./../imgs/main_game.png") !important;
 }
 
 .miss_icon{
@@ -92,6 +98,7 @@ html{
   color:white;
   text-align:center;
 }
+
 .win_text{
   background-image: linear-gradient(to top,rgba(234, 97, 97, .9),rgba(56, 182, 255, .9),rgba(255, 222, 89, .9));
   color:white !important;
@@ -115,31 +122,27 @@ html{
   display:inline;
   z-index:99;
 }
-@keyframes medal_ani{
-  0%{
-    transform: scale(0) rotateZ(0deg) ;
-  }
-  100%{
-    transform: scale(1) rotateX(1800deg) ;
-  }
-}
-.height-100vh{
-  height:100vh;
-}
+
 .ending_image{
   animation: .5s image_trans 1 ease-in;
   position:relative;
   bottom:50px;
   z-index:99
 }
+
 .medal_inner{
   animation: medal_ani .7s 1 ease-in;
   top:0%;position:absolute;left:0%;width:100%;z-index:99;
 }
+
 .medal{
   animation: medal_ani .7s 1 ease-in;
-
-  top:15%;position:relative;left:0%;width:50%;margin-left:25%;z-index:999
+  top:15%;
+  position:relative;
+  left:0%;
+  width:50%;
+  margin-left:25%;
+  z-index:999;
 }
 
 .ending_win{
@@ -149,9 +152,6 @@ html{
   font-size:26px;
   animation: .5s left_trans 1 ease-in;
   position: relative;
-}
-html{
-  overflow-x: hidden;
 }
 
 .ending_container{
@@ -179,16 +179,19 @@ html{
 .quit_button{
   border:1px solid white !important;
 }
+
 .quit_button:hover{
   transition: all .5s;
   background-image:linear-gradient(to right, rgba(255,0,0,1),rgba(255,0,0,.5));
   color:white;
   border-color:red !important;
 }
+
 .character_image{
   width:50%;
   margin-left:25%;
 }
+
 .character_fight_name{
   text-align: center;
   background:none !important;
@@ -205,20 +208,26 @@ html{
   padding-left:0% !important;
   margin-left:25%;
 }
+
 .bar_right{
   margin-left:20% !important;
 }
+
 .health_bar{
   border:1px solid white;
+  top:55% ;
+  position:absolute;
+  margin-top:5%
 }
+
 .bar_left{
   margin-left: -5%;
   margin-top:-10%;
 }
+
 .enemy_blood{
   transform:scaleX(1) !important;
 }
-
 
 .enlarge{
   width:120% !important;
@@ -232,7 +241,6 @@ html{
 }
 
 .move_box{
-
   background: black;
   text-align:center;
   font-size:15px;
@@ -251,7 +259,7 @@ html{
 
 .description_text{
   font-size:13px;
-    font-family: "Allerta Stencil"
+  font-family: "Allerta Stencil"
 }
 
 .description_container{
@@ -264,10 +272,10 @@ html{
   padding-top:1.5%;
   padding-bottom:0;
   left: 40%;
-    width: 20%;
-    position: absolute;
-    top: 0%;
-    border: 1px solid white;
+  width: 20%;
+  position: absolute;
+  top: 0%;
+  border: 1px solid white;
 }
 
 .ending_page{
@@ -281,6 +289,7 @@ html{
   border-color:red;
   position: relative;
 }
+
 .move_box{
   border-width:2px;
   margin-left:1%;
@@ -295,7 +304,7 @@ html{
 
 
 .health_bar{
-  width:80%;
+  width:30%;
   background:black;
   height:4vh;
 }
@@ -303,17 +312,20 @@ html{
 .enemy_bar{
   transform: scaleX(-1);
 }
+
 .fight_page{
   z-index:-5;
 }
+
 .enemy_blood{
   transform: scaleX(-1);
 }
+
 .blood{
   background:#62B63F;
   height:4vh;
   padding:1%;
-
+  top:-1%;
   box-shadow: 0px 0px 4px 4px black;
   font-size:15px;
   font-weight: bold;
@@ -331,8 +343,8 @@ html{
   width:20%;
   float:left;
 }
-.glow_main{
 
+.glow_main{
   width:.5%;
   z-index:-1;
   position: absolute;
@@ -340,20 +352,7 @@ html{
   filter:invert(37%) sepia(46%) saturate(1472%) hue-rotate(324deg) brightness(123%) contrast(103%);
   animation:glow 1 ease-in 5s;
 }
-@keyframes glow{
-  0%{
-    opacity:0%;
-    transform:scale(1)
-  }
-  50%{
-    transform: scale(3);
-    opacity:.5;
-  }
-  100%{
-    opacity:0%;
-    transform:scale(2);
-  }
-}
+
 .boost_enemy{
   left:50%;
 }

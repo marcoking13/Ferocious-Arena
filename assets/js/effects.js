@@ -9,11 +9,13 @@ const GenerateMove = async (move,is_enemy,isRandom) =>{
    await delay(move.milliseconds * move.effects + 500);
 
    total_delay += move.milliseconds * move.effects + 500
+
    var character = null;
 
    if(is_enemy){
      character = "player_character";
-   }else{
+   }
+   else{
      character = "enemy_character";
    }
 
@@ -40,9 +42,11 @@ const CreateSoundElement = (sound) => {
 
   audio.append(source);
 
-  document.body.append(audio);
-  audio.play();
+  if(sound_effects_active){
+    audio.play();
+  }
 
+  document.body.append(audio);
 
 }
 
@@ -57,13 +61,9 @@ const GenerateElementsLoop = async (className,enemy_animation,audio,src,limit,ms
       const element = document.createElement("div");
 
       if(playOnce && i <= 1){
-
         CreateSoundElement(audio)
-
       }else if(!playOnce){
-
         CreateSoundElement(audio)
-
       }
 
       var container = document.querySelector(".effect_box");

@@ -31,24 +31,6 @@
 
   <body class="x_">
 
-    <div class="container-fluid black-background start_screen_background"></div>
-    <div class="video-container">
-      <video autoplay no controls muted playsinline loop id = "vid" autoplay="true" >
-        <source src="https://cdn.shopify.com/videos/c/o/v/f61d6c0bec3a481d8146f9806325d114.mp4" type="video/mp4" />
-      </video>
-  </div>
-      <div class="audio_button_container desktop" style="left:1%;bottom:2.5%;">
-        <img class= "audio_icon inactive"  src = "./assets/imgs/audio_icon.png"/>
-      </div>
-
-    <div class="game_container desktop">
-        <div class="index_container">
-
-        </div>
-        <div class="selected_character"></div>
-        <div class="character_selection"></div>
-        <div class="start_button_container"></div>
-
     <audio autoPlay class="game_music" >
         <source src = "./assets/audio/classic.mp3" type="audio/mp3"></source>
     </audio>
@@ -56,6 +38,30 @@
     <audio autoPlay class="fire_sound" >
         <source src = "./assets/audio/fire_start.mp3" type="audio/mp3"></source>
     </audio>
+
+    <div class="container-fluid black-background start_screen_background"></div>
+
+      <div class="video-container">
+        <video autoplay no controls muted playsinline loop id = "vid" autoplay="true" >
+          <source src="https://cdn.shopify.com/videos/c/o/v/f61d6c0bec3a481d8146f9806325d114.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="audio_button_container desktop" style="left:1%;bottom:2.5%;">
+        <img class= "audio_icon inactive"  src = "./assets/imgs/audio_icon.png"/>
+      </div>
+
+      <div class="game_container desktop">
+
+        <div class="index_container"></div>
+
+        <div class="selected_character"></div>
+
+        <div class="character_selection"></div>
+
+        <div class="start_button_container"></div>
+
+     </div>
 
     <script type="text/javascript"  src ="assets/js/utility.js"></script>
     <script type="text/javascript" src = "assets/js/audio.js"></script>

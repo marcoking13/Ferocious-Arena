@@ -6,7 +6,6 @@
 }
 
 .robotic_bite_ani{
-
   position: absolute;
   width:25%;
   z-index:999;
@@ -15,18 +14,13 @@
   top:15%;
   left:135%;
   filter:invert(65%) sepia(93%) saturate(1219%) hue-rotate(96deg) brightness(107%) contrast(101%);
-
 }
 
 .robotic_bite_ani_enemy{
-
   left:-70%;
-
 }
 
-
 .ghost_fire_ani{
-
   position: absolute;
   width:10%;
   z-index:999;
@@ -34,11 +28,9 @@
   opacity:0;
   top:10%;
   filter:invert(16%) sepia(10%) saturate(5583%) hue-rotate(146deg) brightness(96%) contrast(94%);
-
 }
 
 .spirit_chant_ani{
-
   position: absolute;
   width:20%;
   left:130%;
@@ -46,11 +38,9 @@
   animation: spirit_chant 5s 1 ease-in;
   opacity:0;
   top:30%;
-
 }
 
 .ice_punch_ani{
-
   position: absolute;
   width:20%;
   left:135%;
@@ -58,7 +48,6 @@
   animation: ice_punch 1s 1 ease-in;
   opacity:0;
   top:30%;
-
 }
 
 .ice_punch_ani_enemy{
@@ -66,7 +55,6 @@
 }
 
 .ghost_claw_ani{
-
   position: absolute;
   width:20%;
   left:135%;
@@ -74,7 +62,6 @@
   animation: ghost_claw 1s 1 ease-in;
   opacity:0;
   top:30%;
-
 }
 
 .ghost_claw_ani_enemy{
@@ -82,7 +69,6 @@
 }
 
 .raging_thunder_ani{
-
   position: absolute;
   width:5%;
   left:135%;
@@ -90,7 +76,6 @@
   animation: raging_thunder .5s 1 ease-in;
   opacity:0;
   top:50%;
-
 }
 
 .raging_thunder_ani_enemy{
@@ -133,7 +118,6 @@
   left:-65%;
   animation: move_right 1s 1 ease-in !important;
 }
-
 
 .life_drain_ani{
   position: absolute;

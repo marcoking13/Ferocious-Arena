@@ -1,5 +1,6 @@
 
 @keyframes ghost_claw{
+
   0%{
     opacity:100%;
   }
@@ -25,6 +26,7 @@
 }
 
 @keyframes ice_punch{
+
   0%{
     opacity:50%;
     transform:scale(0);
@@ -45,7 +47,6 @@
   }
 
 }
-
 
 @keyframes spirit_chant {
 
@@ -91,7 +92,6 @@
 
 }
 
-
 @keyframes ghost_fire {
 
   0%{
@@ -106,14 +106,11 @@
     top:25%;
     transform: scale(1.2);
     opacity:1;
-
-
   }
 
   20%{
     top:20%;
     transform: scale(1);
-
   }
 
   30%{
@@ -213,6 +210,7 @@
 
 
 @keyframes explosion{
+
   0%{
     opacity:100%;
     transform: scale(.4);
@@ -224,9 +222,11 @@
     opacity:100%;
     transform: scale(2);
   }
+
 }
 
 @keyframes hypno_stare{
+
   0%{
     opacity:0%;
     transform: scale(.4);
@@ -243,9 +243,11 @@
     opacity:0%;
       transform: scale(1.4);
   }
+
 }
 
 @keyframes hurt{
+
   0%{
     opacity:100%;
   }
@@ -264,9 +266,11 @@
   100%{
     opacity:100%;
   }
+
 }
 
 @keyframes blinding_light{
+
   0%{
     top:30%;
     transform: scale(.4);
@@ -284,10 +288,10 @@
 }
 
 @keyframes venom_boost{
+
   0%{
     transform: scale(1.5);
     opacity:30%;
-
   }
   30%{
     opacity:100%;
@@ -297,10 +301,8 @@
     opacity:30%;
     transform: scale(1);
   }
-
   90%{
     opacity:100%;
-
     transform: scale(.7);
   }
 
@@ -311,6 +313,7 @@
 }
 
 @keyframes hells_escape{
+
   0%{
     transform:rotate(60deg);
     transform:scale(1);
@@ -322,23 +325,28 @@
     opacity:.7;
     transform: scale(.4);
   }
+
   30%{
     opacity:.4;
     filter: invert(78%) sepia(50%) saturate(628%) hue-rotate(331deg) brightness(101%) contrast(102%);
     transform: scale(2);
   }
+
   40%{
     opacity:.7;
     transform: scale(.4);
   }
+
   50%{
     opacity:.4;
     transform: scale(2);
   }
+
   60%{
     opacity:.7;
     transform: scale(.4);
   }
+
   70%{
     opacity:.4;
     transform: scale(2);
@@ -347,10 +355,12 @@
     opacity:.7;
     transform: scale(.4);
   }
+
   90%{
     transform: scale(2);
     opacity:.4;
   }
+
   100%{
     opacity:0;
     transform:rotate(180deg);
@@ -381,12 +391,12 @@
 
   100%{
     opacity:0;
-
   }
 
 }
 
 @keyframes move_right{
+
   0%{
     left:135%;
     transform: scale(.5);
@@ -414,6 +424,7 @@
 }
 
 @keyframes move_left_then_get_big{
+
   0%{
     left:-45%;
     transform: scale(1);
@@ -443,6 +454,7 @@
 }
 
 @keyframes move_right_then_get_big{
+
   0%{
     left:135%;
     transform: scale(1);
@@ -467,6 +479,7 @@
 }
 
 @keyframes move_left{
+
   0%{
     left:-70%;
     transform: scale(.5);

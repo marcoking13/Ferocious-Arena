@@ -1,6 +1,7 @@
 class Recharge {
-  
+
   constructor(turns,is_enemy){
+
     this.turns = turns;
     this.name = "recharge";
     this.is_enemy = is_enemy;
