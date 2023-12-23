@@ -1,3 +1,22 @@
+var fight_video = document.querySelector(".fight_vid");
+
+var video_counter;
+
+var videos = [
+  "https://cdn.shopify.com/videos/c/o/v/37fec920f1a0457785ad48951f6cff86.mp4",
+  "https://cdn.shopify.com/videos/c/o/v/27f962e93e6e471e92b43ec05b3e8688.mp4",
+  "https://cdn.shopify.com/videos/c/o/v/37fec920f1a0457785ad48951f6cff86.mp4",
+  "https://cdn.shopify.com/videos/c/o/v/fd29a2d05d5e4c45a7952035ac4c7b94.mp4"
+]
+
+var random = Math.floor(Math.random() * videos.length);
+
+
+
+var source_html = `<source src="${videos[random]}" type="video/mp4" />`
+
+fight_video.innerHTML = source_html;
+
 const UpdateDescription = (move) => {
 
   var description_element = document.querySelector(".description_text");
